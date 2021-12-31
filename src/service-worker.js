@@ -90,7 +90,6 @@ const apiOfflineFallbacks = [
 
 self.addEventListener("fetch", (event) => {
   // console.log( event.request.url );
-
   // if ( event.request.url !== 'http://localhost:4000/api/auth/renew' ) return;
   if (!apiOfflineFallbacks.includes(event.request.url)) return;
 
